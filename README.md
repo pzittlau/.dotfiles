@@ -9,8 +9,6 @@ This is most of my config for Debian Linux.
 5. Reboot
 6. optionally install gpu-drivers
 
-$a + b^c$
-
 # Other things
 
 The `install.sh` script *can* be used for updating, but it's probably better to do it manually.
