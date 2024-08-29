@@ -1,0 +1,15 @@
+import = ["~/.config/alacritty/tokyonight_moon.toml"]
+
+[font]
+normal = { family = "FiraCode Nerd Font Mono" }
+bold = { family = "FiraCode Nerd Font Mono" }
+italic = { family = "FiraCode Nerd Font Mono" }
+bold_italic = { family = "FiraCode Nerd Font Mono" }
+size = 11
+
+[window]
+decorations = "None"
+dynamic_padding = true
+
+[mouse]
+hide_when_typing = true

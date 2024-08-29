@@ -1,0 +1,40 @@
+-- vim.opt.autoindent = true
+-- vim.opt.autoread = true
+vim.opt.backup = false
+vim.opt.breakindent = true
+-- vim.opt.clipboard = unnamedplus
+vim.opt.completeopt = { "menuone", "noinsert", "noselect" }
+-- vim.opt.conceallevel = 1
+vim.opt.colorcolumn = "80"
+vim.opt.cursorline = true
+vim.opt.expandtab = true
+vim.opt.fileencoding = "utf-8"
+-- vim.opt.foldmethod = "indent"
+vim.opt.formatoptions:append("ro/1]")
+-- vim.opt.hlsearch = false
+vim.opt.ignorecase = true -- not needed because of smartcase
+vim.opt.iskeyword:append("-")
+vim.opt.linebreak = true
+vim.opt.mouse = ""
+vim.opt.modifiable = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 4
+vim.opt.shiftwidth = 4
+vim.opt.sidescrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.opt.showbreak = "> "
+vim.opt.smartcase = true
+vim.opt.smartindent = true
+vim.opt.softtabstop = 4
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.startofline = true
+vim.opt.swapfile = false
+vim.opt.tabstop = 4
+vim.opt.termguicolors = true
+vim.opt.timeoutlen = 250
+vim.opt.undofile = true
+-- vim.opt.updatetime = 50
+vim.opt.whichwrap:append("h,l")
+vim.opt.writebackup = false
