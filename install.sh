@@ -69,9 +69,9 @@ echo -e "\n\nInstalling Zig"
 cd "$INSTALL_DIR"
 if [[ ! -d "~/.zig" ]]; then
     rm -rf zig && mkdir zig && cd zig
-    wget "https://ziglang.org/download/0.13.0/zig-linux-x86-64-0.13.0.tar.xz"
-    tar x zig-linux-x86-64-0.13.0.tar.xz
-    mv zig-linux-x86-64-0.13.0 ~/.zig
+    wget "https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz"
+    tar xf zig-linux-x86_64-0.13.0.tar.xz
+    mv zig-linux-x86_64-0.13.0 ~/.zig
 fi
 cd "$SCRIPT_DIR"
 
