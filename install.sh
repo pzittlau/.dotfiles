@@ -1,7 +1,7 @@
 #!/bin/bash
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &>/dev/null && pwd )
 
-INSTALL_DIR=~/installs/
+INSTALL_DIR=~/Installs/
 mkdir -p "$INSTALL_DIR"
 
 echo -e "Installing system utilities through apt."

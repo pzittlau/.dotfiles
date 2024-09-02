@@ -23,4 +23,5 @@ alias reboot='systemctl reboot'
 alias t='tmux'
 alias gp='git pull'
 alias gs='git status'
+alias gd='git diff'
 
