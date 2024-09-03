@@ -457,5 +457,5 @@ client.connect_signal("unfocus", function(c)
 end)
 -- }}}
 
-awful.spawn.with_shell("setxkbmap -layout us -variant antgr-intl -option nodeadkeys")
+awful.spawn.with_shell("setxkbmap -layout us -variant altgr-intl -option nodeadkeys")
 -- awful.spawn.with_shell("setxkbmap -layout us -variant antgr-intl -option nodeadkeys,caps:ctrl_modifier")
