@@ -6,7 +6,7 @@ mkdir -p "$INSTALL_DIR"
 
 echo -e "Installing system utilities through apt."
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y linux-headers-amd64 build-essential awesome awesome-extra x11-xserver-utils xserver-xorg-input-all xserver-xorg-video-all alacritty tmux vim stow tldr firefox-esr xorg htop vlc brightnessctl network-manager vim wget zip unzip 7zip git tlp ssh openconnect cmake gettext curl fzf ripgrep alsa-utils pipewire pavucontrol acpid blueman pamixer pipewire-alsa playerctl firmware-misc-nonfree htop python3-pip ssh openconnect bluez-firmware bluetooth libspa-0.2-bluetooth sbc-tools libsbc1
+sudo apt install -y linux-headers-amd64 build-essential awesome awesome-extra x11-xserver-utils xserver-xorg-input-all xserver-xorg-video-all alacritty tmux vim stow tldr firefox-esr xorg htop vlc brightnessctl network-manager vim wget zip unzip 7zip git tlp ssh openconnect cmake gettext curl fzf ripgrep alsa-utils pipewire pavucontrol acpid blueman pamixer pipewire-alsa playerctl firmware-misc-nonfree htop python3-pip ssh openconnect bluez-firmware bluetooth libspa-0.2-bluetooth sbc-tools libsbc1 arandr tree python3-venv bc parallel
 sudo apt update && sudo apt upgrade -y
 
 echo -e "\n\nCreating symlinks to configuration files"
