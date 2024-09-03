@@ -22,6 +22,9 @@ alias reboot='systemctl reboot'
 
 alias t='tmux'
 alias gp='git pull'
+alias ga='git add'
+function gch () { git clone git@github.com:pzittlau/"$1"; }
 alias gs='git status'
 alias gd='git diff'
+alias gcm='git commit -m'
 
