@@ -11,16 +11,22 @@ sudo apt update && sudo apt upgrade -y
 
 echo -e "\n\nCreating symlinks to configuration files"
 rm ~/.bashrc
-stow alacritty awesome bash nvim tmux
+stow alacritty awesome bash nvim tmux bin
 
 echo -e "\n\nInstalling tmux plugin manager"
 if [[ ! -d ~/.config/tmux/plugins/tpm ]]; then
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 fi
-# Install tmux plugins, tmux get's killed at the end of the script, when 
-# everything should be installed
+# Install tmux plugin manager and tmux plugins
 tmux new-session -d
 tmux send-keys -t 0 C-Space I
+sleep 5
+tmux kill-session -t 0 # tpm should be installed, so kill tmux
+echo -e "\n\nInstalling tmux plugins"
+tmux new-session -d
+tmux send-keys -t 0 C-Space I
+sleep 5
+tmux kill-session -t 0 # plugins should be installed, so kill tmux
 
 echo -e "\n\nInstalling neovim"
 cd "$INSTALL_DIR"
@@ -104,6 +110,3 @@ sudo service bluetooth restart
 sudo service bluealsa restart
 
 sudo apt autoremove -y
-
-# Now the tmux plugins should be installed, so kill it
-tmux kill-session -t 0
